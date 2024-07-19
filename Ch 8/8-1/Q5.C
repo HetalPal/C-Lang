@@ -1,0 +1,24 @@
+-+#include<stdio.h>
+#include<conio.h>
+
+main()
+{
+	int i,n;
+
+	clrscr();
+
+	printf("Enter the first year :");
+	scanf("%d",&i);
+	printf("Enter the sceond year :");
+	scanf("%d",&n);
+
+	while( i<=n )
+	{
+		if( i%4 == 0 )
+		{
+			printf("%d\t",i);
+		}
+		i=i+4;
+	}
+	getch();
+}

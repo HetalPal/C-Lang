@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+{
+	int HRA = 10;
+	int DA = 5;
+	int TA = 8;
+	int Salary;
+
+	clrscr();
+
+	printf("Enter the value of Salary:");
+	scanf("%d",&Salary);
+
+	Salary =Salary+(Salary*HRA/100)+(Salary*DA/100)+(Salary*TA/100);
+	printf("%d",&Salary);
+
+	getch();
+}
