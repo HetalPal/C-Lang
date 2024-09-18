@@ -4,15 +4,15 @@ main()
 {
 	int row,col;
 	
-	printf("Enter the number of Row:");
+	printf("Enter Row :");
 	scanf("%d",&row);
-	printf("Enter the number of Column:");
+	printf("Enter Column :");
 	scanf("%d",&col);
 	
-	int  a[row][col];
+	int a[row][col];
 	int i,j;
 	
-	printf("\n\n* * * Array Input * * * \n\n");
+	printf("\n\n* * * Array Input * * *\n\n");
 	
 	for(i=0;i<row;i++)
 	{
@@ -30,24 +30,21 @@ main()
 	{
 		for(j=0;j<col;j++)
 		{
-			printf("%d",a[i][j]);
+			printf("%d ",a[i][j]);
 		}
 		printf("\n");
 	}
 	
-	int large=0;
-	
-	printf("\n\n* * * Largest Number * * *\n\n");
+	printf("\n\n* * * Cross Diagonal Element * * *\n\n");
 	
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-			if(large<a[i][j])
+			if(i==j || i+j==row-1)
 			{
-				large=a[i][j];
+				printf("%d ",a[i][j]);
 			}
 		}
 	}
-	printf("The largest number of an Array is %d",large);
 }
